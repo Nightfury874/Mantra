@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Prayer Player for Mom</title>
+  <!-- Mobile viewport for a mobile-focused layout -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Prayer Player</h1>
+    <div class="buttons">
+      <button id="playAllBtn" class="big-button">Play All</button>
+      <button id="settingsBtn" class="normal-button">Settings</button>
+    </div>
+  </header>
+
+  <!-- Current Track Display -->
+  <div id="currentTrackContainer">
+    <h2 id="currentTrackTitle">No track playing</h2>
+  </div>
+
+  <!-- List of Tracks (titles) -->
+  <section id="playlistContainer">
+    <!-- Populated by app.js using config.js data -->
+  </section>
+
+  <!-- Hidden YouTube iframe for audio -->
+  <iframe 
+    id="player" 
+    frameborder="0" 
+    allow="autoplay; encrypted-media" 
+    allowfullscreen>
+  </iframe>
+
+  <!-- SETTINGS MODAL -->
+  <div id="settingsModal" class="modal">
+    <div class="modal-content">
+      <span id="closeSettings" class="close">&times;</span>
+      <h2>Settings</h2>
+      <label for="durationInput">Audio Duration (seconds per track):</label>
+      <input id="durationInput" type="number" min="1" step="1" />
+      <br><br>
+      <button id="saveSettingsBtn" class="normal-button">Save</button>
+    </div>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+/* Mobile-focused layout:
+   - Simple single column
+   - Large text and buttons
+   - Minimal clutter */
+
+/* Basic resets */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+    font-family: Arial, sans-serif;
+    color: #333;
+    /* Slightly bigger base font size for mobile */
+    font-size: 18px;
+  }
+  
+  header {
+    padding: 1rem;
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin: 0.5rem 0;
+    font-size: 1.8rem; /* Large, but not too huge for mobile screen */
+  }
+  
+  .buttons {
+    margin-top: 0.5rem;
+  }
+  
+  .big-button {
+    font-size: 1.2rem;
+    padding: 0.75rem 2rem;
+    margin-right: 1rem;
+  }
+  
+  .normal-button {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+  
+  #currentTrackContainer {
+    text-align: center;
+    margin: 1rem 0;
+  }
+  
+  #currentTrackTitle {
+    font-size: 1.4rem;
+    color: #0077cc;
+    margin: 0.5rem;
+  }
+  
+  #playlistContainer {
+    margin: 0 1rem;
+    padding: 1rem;
+    border-top: 1px solid #ccc;
+  }
+  
+  .track-item {
+    font-size: 1.2rem;
+    margin: 0.75rem 0;
+    cursor: pointer;
+  }
+  
+  .track-item:hover {
+    background-color: #f2f2f2;
+  }
+  
+  /* Hide the video portion (only want audio).
+     On some mobile browsers, you might need a tiny dimension visible to satisfy autoplay policies. */
+  #player {
+    display: none;
+  }
+  
+  /* SETTINGS MODAL */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 9999; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-content {
+    background-color: #ffffff;
+    margin: 25% auto; /* Higher margin for smaller screens */
+    padding: 1.5rem;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 5px;
+  }
+  
+  .close {
+    float: right;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
