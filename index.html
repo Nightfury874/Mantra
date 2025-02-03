@@ -1,1 +1,56 @@
-GO to deepseek/ ChatGPT
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Mobile-only viewport meta tag -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mantra Player</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Include SortableJS from CDN for drag‐and‐drop reordering -->
+  <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js"></script>
+</head>
+<body>
+  <div id="app">
+    <!-- Settings button in the top right -->
+    <button id="settings-button" title="Settings">⚙</button>
+    <h1>Mantra Player</h1>
+    
+    <!-- Center play/pause button -->
+    <div id="center-controls">
+      <button id="play-pause-button">►</button>
+    </div>
+    
+    <!-- Next button below the play/pause button -->
+    <div id="extra-controls">
+      <button id="next-button">Next</button>
+    </div>
+    
+    <!-- Hidden YouTube Player -->
+    <div id="player-container">
+      <div id="player"></div>
+    </div>
+    
+    <!-- Upcoming videos list -->
+    <div id="queue-container">
+      <h2>Upcoming Videos</h2>
+      <ul id="video-list"></ul>
+    </div>
+  </div>
+  
+  <!-- Settings Modal (unchanged) -->
+  <div id="settings-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Settings</h2>
+      <label for="default-time">Default Play Time (seconds):</label>
+      <input type="number" id="default-time" min="10" value="60">
+      <button id="save-settings">Save</button>
+    </div>
+  </div>
+  
+  <!-- Our main JavaScript file -->
+  <script src="main.js"></script>
+  <!-- Load the YouTube IFrame API asynchronously -->
+  <script src="https://www.youtube.com/iframe_api"></script>
+</body>
+</html>
