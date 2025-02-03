@@ -1,9 +1,11 @@
 {
-    "defaultTime": 60,
+    "defaultTime": 90,
     "videos": [
-      { "id": "dQw4w9WgXcQ", "title": "Mantra 1" },
-      { "id": "LXb3EKWsInQ", "title": "Mantra 2" },
-      { "id": "9bZkp7q19f0", "title": "Mantra 3" }
+      { "id": "2d0IOpaJ7PQ", "title": "Mahalaxmi namo namah" },
+      { "id": "nwRoHC83wx0", "title": "Gayatri Mahamantra" },
+      { "id": "3FcBh45t9Vs", "title": "Om Namah Shivaya" },
+      { "id": "nTqDUUG_aFI", "title": "Om Gan Ganpati namo namah" }
+      
     ]
   }
   
