@@ -1,10 +1,12 @@
 {
-    "defaultTime": 90,
+    "defaultTime": 180,
     "videos": [
       { "id": "2d0IOpaJ7PQ", "title": "Mahalaxmi namo namah" },
       { "id": "nwRoHC83wx0", "title": "Gayatri Mahamantra" },
       { "id": "3FcBh45t9Vs", "title": "Om Namah Shivaya" },
-      { "id": "nTqDUUG_aFI", "title": "Om Gan Ganpati namo namah" }
+      { "id": "nTqDUUG_aFI", "title": "Om Gan Ganpati namo namah" },
+      { "id": "ENzldKJRmf8", "title": "Hanuman Chalisa" }
+        ENzldKJRmf8
       
     ]
   }
